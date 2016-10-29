@@ -8,11 +8,16 @@ const through2 = require('through2')
  * 
  * This module is based on through2 to create the transform stream.
  * 
- * @param {number} chunkSize - Size of each chunk
+ * @param {number} chunkSize - Size of each chunk, in bytes
  * @return {Function} Stream transform function 
  */
 
 const StreamChunkify = (chunkSize) => {
+    chunkSize = parseInt(chunkSize, 10)
+    if(!chunkSize || chunkSize < 0) {
+        throw Error('StreamChunkify requires a chunk size in bytes')
+    }
+
     // These arrays contain the Buffer objects and the size of each buffer
     let chunkBuffers = []
     let chunkBufferSizes = []

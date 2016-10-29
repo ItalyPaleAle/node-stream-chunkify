@@ -16,6 +16,6 @@
     "mocha": "^3.1.0"
   },
   "dependencies": {
-    "through2": "^2.0.1"
+    "through2": "^2.0.0"
   }
 }
