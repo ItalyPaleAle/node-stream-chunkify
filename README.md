@@ -11,7 +11,7 @@ This module is based on [through2](https://github.com/rvagg/through2).
 Get the package from NPM:
 
 ````sh
-$ npm install --save stream-chunkify
+npm install --save stream-chunkify
 ````
 
 ## API and Example
