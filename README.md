@@ -6,6 +6,14 @@ The input stream can come in chunks that are either bigger or smaller than the d
 
 This module is based on [through2](https://github.com/rvagg/through2).
 
+## Install
+
+Get the package from NPM:
+
+````sh
+$ npm install --save stream-chunkify
+````
+
 ## API and Example
 
 The module exposes just one function:
