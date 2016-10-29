@@ -1,0 +1,21 @@
+{
+  "name": "stream-chunkify",
+  "version": "1.0.0",
+  "description": "Transforms a stream so all chunks have the same size in bytes, regardless of the input stream. The last chunk may be smaller if there's remaining data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "stream"
+  ],
+  "author": "Alessandro Segala",
+  "license": "MIT",
+  "repository": "EgoAleSum/node-stream-chunkify",
+  "devDependencies": {
+    "mocha": "^3.1.0"
+  },
+  "dependencies": {
+    "through2": "^2.0.1"
+  }
+}
